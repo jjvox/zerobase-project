@@ -1,5 +1,5 @@
 import styled from "@emotion/styled";
-import React, { useEffect, useState } from "react";
+import { useEffect, useState } from "react";
 import caruselData from "../../data/caruselData";
 import { breakPoints } from "../../styles/breakPoints";
 import CaruselItem from "./CaruselItem";
