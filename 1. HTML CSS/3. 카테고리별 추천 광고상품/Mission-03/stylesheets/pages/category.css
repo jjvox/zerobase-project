@@ -1,0 +1,1075 @@
+/* 카테고리별 추천 광고상품 */
+
+.sr-only {
+  border: 0 !important;
+  clip: rect(1px, 1px, 1px, 1px) !important;
+  -webkit-clip-path: inset(50%) !important;
+  clip-path: inset(50%) !important;
+  height: 1px !important;
+  overflow: hidden !important;
+  padding: 0 !important;
+  position: absolute !important;
+  width: 1px !important;
+  white-space: nowrap !important;
+}
+
+/* header 영역 */
+header {
+  position: absolute;
+  width: 1020px;
+  height: 56px; 
+  margin: 0px;
+  left: max(10px, calc(50vw - 510px));
+  top: 100px;  
+}
+
+h1 {
+  margin: 0px;
+}
+h1 svg {
+  position: absolute;
+  width: 246px;
+  height: 56px; 
+  left:9px;
+}
+
+/* 메인 section*/
+
+#main {
+  position: absolute;
+  width: 1020px;
+  height: 1376px;
+  left: max(10px, calc(50vw - 510px));
+  top: 204px;  
+}
+
+#bestcate {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 0px;
+ 
+  position: relative;
+
+  height: 46px;
+  width: 260px;
+  left: 0px;
+  top: 0px;   
+}
+#bestcate div:first-child h2 {
+  height: 18px;
+
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 115%;
+
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+}
+#bestcate div:last-child {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 0px;
+  gap: 10px;
+
+  height: 28px;
+  
+  flex: none;
+  order: 1;
+  flex-grow: 0;
+}
+#bestcate div:last-child h2:first-of-type {
+  height: 28px;
+
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 115%;
+
+  flex: none;
+  order: 0;
+  flex-grow: 0; 
+}
+#bestcate div:last-child h2:last-of-type {
+  height: 28px;
+  
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 115%;
+
+  flex: none;
+  order: 1;
+  flex-grow: 0;
+
+  color: var(--color-blue-600);
+}
+
+
+/* houseware article 영역*/
+
+#houseware {
+
+  position: absolute;
+  width: 1022px;
+  height: 634px;
+  left: -2px;
+  top: 70px;
+
+  border-top-style: solid;
+  border-top-width: 1.17px;
+  border-bottom-style: solid;
+  border-bottom-width: 1.17px;
+  border-color: var(--color-brown-300);
+
+  display: flex;
+  justify-content: space-between;
+  
+}
+.first_section {
+  position: relative;
+  flex-basis: 0;
+  flex-grow: 1;
+}
+.carousel_section{
+  position: relative;
+  width: 320px;
+  height: 631px;
+}
+.product_card {
+  flex-basis: 0;
+  flex-grow: 3;
+
+  position: relative;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+#househead h3 {
+  position: absolute;
+  width: 89px;
+  height: 28px;
+  left: 24px;
+  top: 48px;
+  margin: 0px;
+
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 115%;
+
+  color: var(--color-brown-300);
+}
+.head3link {
+  position: absolute;
+  width: 68px;
+  height: 17px;
+  left: 24px;
+  top: 84px;
+
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 120%;
+
+  color: var(--color-gray-700);
+}
+.head3link::after {
+  display: inline-block;
+  content: "";
+  background: url("data:image/svg+xml,%3Csvg width='6' height='10' viewBox='0 0 6 10' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M4.33638 5L0 0.917474L0.974524 0L5.79817 4.54126C6.06728 4.79462 6.06728 5.20538 5.79817 5.45874L0.974524 10L0 9.08253L4.33638 5Z' fill='%23929292'/%3E%3C/svg%3E%0A");
+  width: 6px;
+  height: 10px;
+
+
+}
+
+.keyword p {
+  position: absolute;
+  width: 92px;
+  height: 21px;
+  left: 24px;
+  top: 349px;
+
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 115%;
+
+  margin: 0px;
+}
+.keyword ul {
+  list-style: none;
+  padding: 0px;
+
+  position: absolute;
+  height: 216px;
+  left: 24px;
+  top: 390px;
+
+  display: flex;
+  flex-direction: column; 
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+#keywords span{
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 120%;
+
+  height: 26px;
+
+  border-style: solid;
+  border-width: 1px;
+  border-color: var(--color-gray-400);
+
+  color: var(--color-brown-300); 
+
+  padding: 4px 10px;
+}
+
+
+/* 카루셀 영역 */
+
+.carousel_section img:nth-of-type(1) {
+  position: absolute;
+  z-index: 0;
+}
+.carousel_section img:nth-of-type(2) {
+  position: absolute;
+  z-index: -1;
+} 
+.carousel_section div:nth-of-type(1) {
+  position: absolute;
+  width: 260px;
+  height: 90px;
+  left: 30px;
+  top: 483px;
+
+  background-color: var(--color-brown-300);
+}
+.carousel_section div:nth-of-type(2) {
+  position: absolute;
+  width: 32px;
+  height: 12px;
+  left: 144px;
+  top: 597px;  
+
+  display: flex;
+  justify-content: space-between;
+}
+.carousel_section p:nth-of-type(1) {
+  position: absolute;
+  width: 205px;
+  height: 24px;
+  left: 28px;
+  top: 19px;
+
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 120%;
+
+  text-align: center;
+
+  color: var(--color-white);
+}
+.carousel_section p:nth-of-type(2) {
+  position: absolute;
+  width: 215px;
+  height: 19px;
+  left: 23px;
+  top: 51px;
+
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 120%;
+  
+  text-align: center; 
+
+  color: var(--color-white)
+}
+
+.carousel_section button:nth-of-type(1) {
+
+  padding: 0px;
+  border-style: none;
+  border-radius: 50%;
+
+  width: 12px;
+  height: 12px;
+   
+  background-color: var(--color-gray-700);
+}
+.carousel_section button:nth-of-type(2) {
+
+  padding: 0px;  
+  border-style: none;
+  border-radius: 50%;
+  width: 12px;
+  height: 12px;
+  
+  background-color: var(--color-gray-600);
+}
+
+
+/* house product card */
+
+.card1, .card2 {
+  position: relative;
+  flex-basis: 0;
+  flex-grow: 1;
+
+  display: flex;
+  justify-content: space-between;
+}
+
+.divline {
+  position: relative;
+  bottom: 7.5px;
+  height: 15px;
+}
+.divline::after {
+  content: "";
+  display: inline-block;
+  width: 526.5px;
+  border-top-width: 0.3px;
+  border-top-style: solid;
+  border-color: var(--color-opacity-20);
+}
+
+.card1 a, .card2 a {
+  position: relative;
+  width: 160px;
+  height: 300px;
+  top: 9px;
+  margin-left: 10px;
+}
+
+#house_product_card1 {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 0px;
+  gap: 12px;
+  
+  position: absolute;
+  width: 152px;
+  height: 73px;
+  left: 4px;
+  top: 172px;   
+}
+#house_product_card1 p:first-of-type {
+  width: 152px;
+  height: 34px;
+
+  font-weight: 500;
+  font-size: 13px;
+  line-height: 120%;
+
+  flex: none;
+  order: 0;
+  flex-grow: 0;  
+}
+#house_product_card1 p:last-of-type {
+  width: 80px;
+  height: 27px;
+
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 120%;
+  
+  flex: none;
+  order: 1;
+  flex-grow: 0; 
+}
+#house_product_card1 p:last-of-type span {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 120%;
+}
+
+#house_product_card2 {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between; 
+  padding: 0px;
+  gap: 12px;
+  
+  position: absolute;
+  width: 152px;
+  height: 90px;
+  left: 4px;
+  top: 172px;   
+}
+#house_product_card2 p:first-of-type {
+  width: 153px;
+  height: 51px;
+
+  font-weight: 500;
+  font-size: 13px;
+  line-height: 120%;
+
+  flex: none;
+  order: 0;
+  flex-grow: 0;  
+}
+#house_product_card2 p:last-of-type {
+  width: 152px;
+  height: 27px;
+
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 120%;
+  
+  flex: none;
+  order: 1;
+  flex-grow: 0; 
+
+  display: inline-block;
+  position: relative;
+}
+#house_product_card2 p:last-of-type span {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 120%;
+}
+#house_product_card2 p:last-of-type img {
+  width: 54px;
+  height: 14px; 
+
+  position: absolute;
+  top : 4px;
+  left : 81px;
+}
+
+#house_product_card3 {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between; 
+  padding: 0px;
+  gap: 12px;
+  
+  position: absolute;
+  width: 152px;
+  height: 94px;
+  left: 4px;
+  top: 172px;   
+}
+#house_product_card3 p:first-of-type {
+  width: 155px;
+  height: 34px;
+
+  font-weight: 500;
+  font-size: 13px;
+  line-height: 120%;
+
+  flex: none;
+  order: 0;
+  flex-grow: 0;  
+}
+#house_product_card3 p:nth-of-type(2) {
+  position: absolute;
+  left: 0%;
+  top: 48.94%;
+  bottom: 32.98%;
+
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 120%;
+
+  color: var(--color-red-500);
+}
+#house_product_card3 p:last-of-type {
+  width: 152px;
+  height: 27px;
+
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 120%;
+  
+  flex: none;
+  order: 1;
+  flex-grow: 0; 
+
+  display: inline-block;
+  position: relative;
+}
+#house_product_card3 p:last-of-type span {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 120%;
+}
+#house_product_card3 p:last-of-type img {
+  width: 54px;
+  height: 14px; 
+
+  position: absolute;
+  top : 4px;
+  left : 81px;
+}
+
+#house_product_card4 {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between; 
+  padding: 0px;
+  gap: 12px;
+  
+  position: absolute;
+  width: 152px;
+  height: 94px;
+  left: 4px;
+  top: 172px;   
+}
+#house_product_card4 p:first-of-type {
+  width: 155px;
+  height: 34px;
+
+  font-weight: 500;
+  font-size: 13px;
+  line-height: 120%;
+
+  flex: none;
+  order: 0;
+  flex-grow: 0;  
+}
+#house_product_card4 p:nth-of-type(2) {
+  position: absolute;
+  left: 0%;
+  top: 48.94%;
+  bottom: 32.98%;
+
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 120%;
+
+  color: var(--color-red-500);
+}
+#house_product_card4 p:last-of-type {
+  width: 152px;
+  height: 27px;
+
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 120%;
+  
+  flex: none;
+  order: 1;
+  flex-grow: 0; 
+
+  display: inline-block;
+  position: relative;
+}
+#house_product_card4 p:last-of-type span {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 120%;
+}
+#house_product_card4 p:last-of-type img {
+  width: 54px;
+  height: 14px; 
+
+  position: absolute;
+  top : 4px;
+  left : 75px;
+}
+
+#house_product_card5 {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 0px;
+  gap: 12px;
+  
+  position: absolute;
+  width: 152px;
+  height: 73px;
+  left: 4px;
+  top: 172px;   
+}
+#house_product_card5 p:first-of-type {
+  width: 152px;
+  height: 34px;
+
+  font-weight: 500;
+  font-size: 13px;
+  line-height: 120%;
+
+  flex: none;
+  order: 0;
+  flex-grow: 0;  
+}
+#house_product_card5 p:last-of-type {
+  width: 80px;
+  height: 27px;
+
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 120%;
+  
+  flex: none;
+  order: 1;
+  flex-grow: 0; 
+}
+#house_product_card5 p:last-of-type span {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 120%;
+}
+
+#house_product_card6 {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 0px;
+  gap: 12px;
+  
+  position: absolute;
+  width: 152px;
+  height: 73px;
+  left: 4px;
+  top: 172px;    
+}
+#house_product_card6 p:first-of-type {
+  width: 152px;
+  height: 34px;
+
+  font-weight: 500;
+  font-size: 13px;
+  line-height: 120%;
+
+  flex: none;
+  order: 0;
+  flex-grow: 0;  
+}
+#house_product_card6 p:last-of-type {
+  width: 152px;
+  height: 27px;
+
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 120%;
+  
+  flex: none;
+  order: 1;
+  flex-grow: 0; 
+
+  display: inline-block;
+  position: relative;
+}
+#house_product_card6 p:last-of-type span {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 120%;
+}
+#house_product_card6 p:last-of-type img {
+  width: 54px;
+  height: 14px; 
+
+  position: absolute;
+  top : 4px;
+  left : 81px;
+}
+
+
+
+/* 키친웨어 */
+
+#kitchenware {
+  position: absolute;
+  width: 1022px;
+  height: 634px;
+  left: 1px;
+  top: 728px;
+
+  border-top-style: solid;
+  border-top-width: 1.17px;
+  border-bottom-style: solid;
+  border-bottom-width: 1.17px;
+  border-color: var(--color-green-700);
+
+  display: flex;
+  justify-content: space-between;
+}
+
+#kitchenhead h3 {
+  position: absolute;
+  width: 89px;
+  height: 28px;
+  left: 24px;
+  top: 48px;
+  margin: 0px;
+
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 115%;
+
+  color: var(--color-green-700);
+}
+
+#kitchen_keywords span{
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 120%;
+
+  height: 26px;
+
+  border-style: solid;
+  border-width: 1px;
+  border-color: var(--color-gray-400);
+
+  color: var(--color-green-700); 
+
+  padding: 4px 10px;
+}
+
+/* 카루셀 영역 */
+
+#carousel_back_color {
+  background-color: var(--color-green-700);
+}
+
+/* kitchenware product card */
+
+#kitchen_product_card1 {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 0px;
+  gap: 12px;
+  
+  position: absolute;
+  width: 152px;
+  height: 94px;
+  left: 4px;
+  top: 172px;   
+}
+#kitchen_product_card1 p:first-of-type {
+  width: 152px;
+
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 120%;
+
+  flex: none;
+  order: 0;
+  flex-grow: 0;  
+}
+#kitchen_product_card1 p:nth-of-type(2) {
+  position: absolute;
+  left: 0%;
+  top: 48.94%;
+  bottom: 32.98%;
+
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 120%;
+
+  color: var(--color-red-500);
+}
+#kitchen_product_card1 p:last-of-type {
+  width: 152px;
+  height: 27px;
+
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 120%;
+  
+  flex: none;
+  order: 1;
+  flex-grow: 0; 
+
+  display: inline-block;
+  position: relative;
+}
+#kitchen_product_card1 p:last-of-type span {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 120%;
+}
+#kitchen_product_card1 p:last-of-type img {
+  width: 54px;
+  height: 14px; 
+
+  position: absolute;
+  top : 4px;
+  left : 81px;
+}
+
+#kitchen_product_card2 {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between; 
+  padding: 0px;
+  gap: 12px;
+  
+  position: absolute;
+  width: 152px;
+  height: 73px;
+  left: 4px;
+  top: 172px;   
+}
+#kitchen_product_card2 p:first-of-type {
+  width: 153px;
+
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 120%;
+
+  flex: none;
+  order: 0;
+  flex-grow: 0;  
+}
+#kitchen_product_card2 p:last-of-type {
+  width: 152px;
+  height: 27px;
+
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 120%;
+  
+  flex: none;
+  order: 1;
+  flex-grow: 0; 
+
+  display: inline-block;
+  position: relative;
+}
+#kitchen_product_card2 p:last-of-type span {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 120%;
+}
+#kitchen_product_card2 p:last-of-type img {
+  width: 54px;
+  height: 14px; 
+
+  position: absolute;
+  top : 4px;
+  left : 81px;
+}
+
+#kitchen_product_card3 {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between; 
+  padding: 0px;
+  gap: 12px;
+  
+  position: absolute;
+  width: 152px;
+  height: 94px;
+  left: 4px;
+  top: 172px;   
+}
+#kitchen_product_card3 p:first-of-type {
+  width: 155px;
+
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 120%;
+
+  flex: none;
+  order: 0;
+  flex-grow: 0;  
+}
+#kitchen_product_card3 p:nth-of-type(2) {
+  position: absolute;
+  left: 0%;
+  top: 48.94%;
+  bottom: 32.98%;
+
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 120%;
+
+  color: var(--color-red-500);
+}
+#kitchen_product_card3 p:last-of-type {
+  width: 152px;
+  height: 27px;
+
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 120%;
+  
+  flex: none;
+  order: 1;
+  flex-grow: 0; 
+
+  display: inline-block;
+  position: relative;
+}
+#kitchen_product_card3 p:last-of-type span {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 120%;
+}
+#kitchen_product_card3 p:last-of-type img {
+  width: 54px;
+  height: 14px; 
+
+  position: absolute;
+  top : 4px;
+  left : 81px;
+}
+
+#kitchen_product_card4 {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between; 
+  padding: 0px;
+  gap: 12px;
+  
+  position: absolute;
+  width: 152px;
+  height: 73px;
+  left: 4px;
+  top: 172px;   
+}
+#kitchen_product_card4 p:first-of-type {
+  width: 155px;
+
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 120%;
+
+  flex: none;
+  order: 0;
+  flex-grow: 0;  
+}
+#kitchen_product_card4 p:last-of-type {
+  width: 152px;
+  height: 27px;
+
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 120%;
+  
+  flex: none;
+  order: 1;
+  flex-grow: 0; 
+
+  display: inline-block;
+  position: relative;
+}
+#kitchen_product_card4 p:last-of-type span {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 120%;
+}
+#kitchen_product_card4 p:last-of-type img {
+  width: 54px;
+  height: 14px; 
+
+  position: absolute;
+  top : 4px;
+  left : 75px;
+}
+
+#kitchen_product_card5 {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 0px;
+  gap: 12px;
+  
+  position: absolute;
+  width: 152px;
+  height: 73px;
+  left: 4px;
+  top: 172px;   
+}
+#kitchen_product_card5 p:first-of-type {
+  width: 152px;
+
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 120%;
+
+  flex: none;
+  order: 0;
+  flex-grow: 0;  
+}
+#kitchen_product_card5 p:last-of-type {
+  width: 80px;
+  height: 27px;
+
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 120%;
+  
+  flex: none;
+  order: 1;
+  flex-grow: 0; 
+}
+#kitchen_product_card5 p:last-of-type span {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 120%;
+}
+
+#kitchen_product_card6 {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 0px;
+  gap: 12px;
+  
+  position: absolute;
+  width: 152px;
+  height: 94px;
+  left: 4px;
+  top: 172px;    
+}
+#kitchen_product_card6 p:first-of-type {
+  width: 152px;
+
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 120%;
+
+  flex: none;
+  order: 0;
+  flex-grow: 0;  
+}
+#kitchen_product_card6 p:nth-of-type(2) {
+  position: absolute;
+  left: 0%;
+  top: 48.94%;
+  bottom: 32.98%;
+
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 120%;
+
+  color: var(--color-red-500);
+}
+#kitchen_product_card6 p:last-of-type {
+  width: 152px;
+  height: 27px;
+
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 120%;
+  
+  flex: none;
+  order: 1;
+  flex-grow: 0; 
+
+  display: inline-block;
+  position: relative;
+}
+#kitchen_product_card6 p:last-of-type span {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 120%;
+}
+#kitchen_product_card6 p:last-of-type img {
+  width: 54px;
+  height: 14px; 
+
+  position: absolute;
+  top : 4px;
+  left : 81px;
+}

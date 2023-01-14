@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="ko-KR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>헤더 - 쿠팡(Coupang)</title>
+    <link rel="icon" href="assets/favicon/favicon.png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="stylesheets/main.css" />
+    <script src="js/main.js" defer></script>
+  </head>
+
+  <body>
+    <header>
+      <div id="loginbar">
+        <ul id="loginbar_list">
+          <li><a href="/">로그인</a></li>
+          <li><a href="/">회원가입</a></li>
+          <li><a href="/">고객센터</a></li>
+          <li><a href="/">쿠팡플레이</a></li>
+          <li><a href="/">제휴마케팅</a></li>
+        </ul>
+      </div>
+      <div id="main_header">
+        <button type="button" class="button--category">카테고리</button>
+        <div id="logo">
+          <a href="https://www.coupang.com/" target="_blank" rel="noopener">
+            <h1><br />Coupang</h1>
+          </a>
+        </div>
+        <div id="search">
+          <form id="search_select">
+            <select name="category">
+              <option value="all" selected>전체</option>
+            </select>
+            <div>
+              <svg width="9" height="6" viewBox="0 0 9 6" fill="none">
+                <path d="M9 0H0L4.69565 6L9 0Z" fill="#767676" />
+              </svg>
+            </div>
+          </form>
+          <form>
+            <input
+              type="search"
+              required
+              placeholder="찾고 싶은 상품을 검색해 보세요!"
+            />
+            <label class="sr-only" for="micsearch">음성검색</label>
+            <button type="button" id="micsearch"></button>
+            <label class="sr-only" for="search_button">검색</label>
+            <button id="search_button"></button>
+          </form>
+        </div>
+        <div class="myCoupang">
+          <button>마이쿠팡</button>
+          <ul>
+            <li><a href="/">주문목록</a></li>
+            <li><a href="/">취소/반품</a></li>
+            <li><a href="/">찜리스트</a></li>
+          </ul>
+        </div>
+        <div class="cart">
+          <button>장바구니</button>
+          <p id="cart_count">0</p>
+          <div id="cart_active">장바구니에 담긴 상품이 없습니다.</div>
+        </div>
+        <nav id="typeNavigation">
+          <ul>
+            <li>
+              <p>
+                <img src="assets/icon/icon-rocket.svg" alt="로켓배송" />
+                로켓배송
+              </p>
+            </li>
+            <li>
+              <p>
+                <img src="assets/icon/icon-fresh.svg" alt="로켓프레시" />
+                로켓프레시
+              </p>
+            </li>
+            <li>
+              <p>
+                2022 설날
+                <img src="assets/icon/new.svg" alt="new" />
+              </p>
+            </li>
+            <li>로켓직구</li>
+            <li>골드박스</li>
+            <li>정기배송</li>
+            <li>이벤트/쿠폰</li>
+            <li>기획전</li>
+            <li>여행티켓</li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+  </body>
+</html>

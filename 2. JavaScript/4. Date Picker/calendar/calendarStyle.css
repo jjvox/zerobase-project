@@ -1,0 +1,154 @@
+.calendar {
+  position: relative;
+  top:10px;
+  width: var(--min-width);
+  width: 100%;
+  border: 1px solid greenyellow;
+  border-radius: 10px;
+  visibility: hidden;
+}
+
+@media screen and (min-width:500px) {
+  .calendar {
+    width: var(--max-width);
+  }
+}
+
+.calendar.active {
+  visibility: visible;
+}
+
+.calendar-nav {
+  display: flex;
+  justify-content: space-between;
+  background-color: greenyellow;
+  border-radius: 8px 8px 0px 0px;
+  padding-top: 5%;
+  padding-bottom: 6%;
+  overflow: hidden;
+}
+
+.arrow-left {
+  position: relative;
+  left: 2%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 30px;
+  cursor: pointer;
+}
+.arrow-left-inner {
+  position: relative;
+  left: 15%;
+  border: solid 8px;
+  border-top-color: greenyellow;
+  border-left-color: greenyellow;
+  border-bottom-color: greenyellow;
+  border-right-color: white;
+  cursor: pointer;
+}
+
+.arrow-right {
+  position: relative;
+  right: 2%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 30px;
+  cursor: pointer;
+}
+
+.arrow-right-inner {
+  position: relative;
+  right: 15%;
+  border: solid 8px;
+  border-top-color: greenyellow;
+  border-left-color: white;
+  border-bottom-color: greenyellow;
+  border-right-color: greenyellow;
+  cursor: pointer;
+}
+
+.calendar-month-year {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+.calendar-year {
+  padding-top: 10%;
+}
+
+.calendar-grid {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.day-container {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  grid-auto-flow: row;
+  padding: 3% 1% 3% 1%;
+  justify-items: center;
+  align-items: center; 
+  overflow: hidden;
+}
+
+.day.sun {
+  color: red;
+}
+
+.date-container {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  grid-auto-flow: row;
+  padding: 1% 1% 1% 1%;
+}
+
+.date {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.date::after {
+  content: '';
+  display: block;
+  padding-bottom: 100%;
+}
+
+.date-inner {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  cursor: pointer;
+}
+
+.date-inner.prev {
+  color: grey;
+}
+.date-inner.next {
+  color: grey;
+}
+.date-inner.sun {
+  color: red;
+}
+.date-inner::before {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  border: var(--border);
+  border-radius: var(--border_radius);
+}
+.date-inner:hover {
+  content: "";
+  color:white;
+  background-color: greenyellow;
+  border-radius: 50%;
+}

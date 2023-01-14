@@ -1,0 +1,324 @@
+/* CSS 작성 */
+header {
+  position: absolute;
+  padding: 0px;
+  width: 1020px;
+  top: 100px;
+  left: max(10px, calc(50vw - 510px));
+  display: block;
+}
+
+img[alt="coupang logo"] {
+  width: 176px;
+  height: 40px;
+}
+
+
+section {
+  position: relative;
+  width: 1020px;
+  height: 1010px;
+  left: max(10px, calc(50vw - 510px));
+  top: 188px;
+}
+
+#subtitle {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 0px;
+  gap: 10px;
+  
+  position: absolute;
+  width: 366px;
+  height: 28px;
+  left: 0px;
+  top: 8px;
+  
+}
+
+h2 {
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 115%;
+
+  text-align: center;
+  flex: none;
+
+  color: var(--color-black);
+  opacity: var(--color-opacity-20);
+}
+
+span[aria-hidden] {
+  color: var(--color-gray-600)
+}
+
+h3 {
+  height: 18px;
+  font-weight: 500;
+  font-size: 16px;
+
+  display: flex;
+  align-items: center;
+
+
+  flex: none;
+  order: 2;
+  flex-grow: 0;
+  color: var(--color-gray-600);
+}
+
+
+#image {
+  position: absolute;
+  width: 1020px;
+  height: 958px;
+  left: 0px;
+  top: 60px;
+}
+
+#img1 {
+  position: absolute;
+  width: 502px;
+  height: 310px;
+  left: 0px;
+  top: 0px;
+
+  border: 1px solid;
+  float: left;
+  color: var(--color-gray-500);
+}
+
+#img1 img{
+  position: absolute;
+  width: 446px;
+  height: 270px;
+  left: 28px;
+  top: 20px;
+
+}
+
+#img2 {
+  position: absolute;
+  width: 502px;
+  height: 310px;
+  left: 518px;
+  top: 0px;
+
+  border: 1px solid;
+  float: right;
+  color: var(--color-gray-500);
+}
+
+#img2 img {
+  position: absolute;
+  width: 446px;
+  height: 270px;
+  left: 28px;
+  top: 20px;
+
+}
+
+#img3 {
+  position: absolute;
+  width: 243px;
+  height: 310px;
+  left: 0px;
+  top: 326px;
+
+  border: 1px solid;
+  float: left;
+  margin-right: 16px;
+  color: var(--color-gray-500);
+}
+
+#img3 img {
+  position: absolute;
+  width: 200px;
+  height: 282px;
+  left: 21px;
+  top: 14px;
+
+}
+
+#img4 {
+  position: absolute;
+  width: 243px;
+  height: 310px;
+  left: 259px;
+  top: 326px;
+
+  border: 1px solid;
+  float: left;
+  margin-right: 16px;
+  color: var(--color-gray-500);
+}
+
+#img4 img {
+  position: absolute;
+  width: 200px;
+  height: 282px;
+  left: 21px;
+  top: 14px;
+   
+}
+
+#img5 {
+  position: absolute;
+  width: 243px;
+  height: 310px;
+  left: 518px;
+  top: 326px;
+
+  border: 1px solid;
+  float: left;
+  color: var(--color-gray-500);
+}
+
+#img5 img {
+  position: absolute;
+  width: 200px;
+  height: 282px;
+  left: 21px;
+  top: 14px;
+}
+
+#img6 {
+  position: absolute;
+  width: 243px;
+  height: 310px;
+  left: 777px;
+  top: 326px;
+
+  border: 1px solid;
+  float: right;
+  color: var(--color-gray-500);
+}
+
+#img6 img {
+  position: absolute;
+  width: 200px;
+  height: 282px;
+  left: 21px;
+  top: 14px;
+
+}
+
+#img7 {
+  position: absolute;
+  width: 502px;
+  height: 310px;
+  left: 0px;
+  top: 652px;
+
+  border: 1px solid;
+  float: left;
+  margin-right: 16px;
+  color: var(--color-gray-500);
+}
+
+#img7 img {
+  position: absolute;
+  width: 446px;
+  height: 270px;
+  left: 28px;
+  top: 20px;
+
+}
+
+#img8 {
+  position: absolute;
+  width: 243px;
+  height: 310px;
+  left: 518px;
+  top: 652px;
+
+  border: 1px solid;
+  float: left;
+  margin-right: 16px;
+  color: var(--color-gray-500);
+}
+
+#img8 img {
+  position: absolute;
+  width: 200px;
+  height: 282px;
+  left: 21px;
+  top: 14px; 
+}
+
+#img9 {
+  position: absolute;
+  width: 243px;
+  height: 310px;
+  left: 777px;
+  top: 652px;
+
+  border: 1px solid;
+  float: right;
+  color: var(--color-gray-500);
+}
+
+#img9 img {
+  position: absolute;
+  width: 200px;
+  height: 282px;
+  left: 21px;
+  top: 14px;
+
+}
+
+button {
+  position: absolute;
+  width: 42px;
+  height: 42px;
+  left: 20px;
+  top: 248px;
+
+  background-color: var(--color-opacity-20);
+
+  border:none;
+  color : var(--color-white);
+
+  transition: all 1s;
+}
+
+
+#image div:hover {
+  border-color: var(--color-blue-600);
+}
+
+#image div:hover button {
+  position: absolute;
+  width: 112px;
+  height: 42px;
+  right: 370px;
+  top: 248px;
+
+  background-color: var(--color-blue-600);
+  white-space: pre;
+  cursor: pointer;
+}
+
+#image div:focus-within {
+  border-color: var(--color-blue-600);
+}
+
+#image div:focus-within button, button:focus {
+  position: absolute;
+  width: 112px;
+  height: 42px;
+  right: 370px;
+  top: 248px;
+
+  background-color: var(--color-blue-600);
+  outline-color: var(--color-blue-600);
+  white-space: pre;
+  cursor: pointer;
+}
+
+#image div:hover button::before, #image div:focus-within button::before, button:focus::before {
+  content: '구매하기    ';
+} 
+
