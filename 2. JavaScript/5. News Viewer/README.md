@@ -1,4 +1,4 @@
-##News Viewer
+## News Viewer
 
 - API 통신으로 뉴스 불러오기. 
 - Observer를 이용해서 무한스크롤 & 자동 api호출 구현. => 구글링 참고 많이 함. 
